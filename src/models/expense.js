@@ -1,10 +1,12 @@
 const mongoose=require("mongoose");
 const expensesSchema=new mongoose.Schema({
     title:{
-        type:String
+        type:String,
+        required:true
     },
     amount:{
-        type:Number
+        type:Number,
+        required:true
     },
     date:{
         type:Date,
